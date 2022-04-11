@@ -1,21 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Player</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href=""></a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Video Player</title>
+        <link rel="stylesheet" type="text/css" href="assets/fonts/css/all.css">
+        <link rel="stylesheet" type="text/css"
+            href="assets/fonts/css/brands.css">
+        <link rel="stylesheet" type="text/css"
+            href="assets/fonts/css/solid.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="topbar">
+                <ul class="">
+                    <li>
+                        <a href=""><i class="fa fa-bars"></i></a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="logo"
+                                src="assets/images/YouTube-Logo.wine.png"
+                                alt="logo" />
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <form>
+                            <input type="search" placeholder="Search">
+                            <button>
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-microphone"></i></a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href=""><i class="fa fa-video"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-th"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="far fa-bell"></i></a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="avatar" src="assets/images/avatar6.png"
+                                alt="avatar" />
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-content">
+            <section class="selected-video-col">
+                <div class="video">
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/_fk1Dp4Yd-g"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <h3>Encourage girls into coding</h3>
+                <div class="summary">
+                    <p class="views-date">
+                        52 views
+                        <time datetime="2019-08-26"> Aug 26, 2019</time>
+                    </p>
+                    <p class="desc">
+                        Learn the basics of scratch programmming
+                    </p>
+                </div>
+                <div class="action-links">
+                    <a href="">
+                        <i class="far fa-thumbs-up"></i>
+                        Like
+                        <span class="tiptext">I like this</span>
+                    </a>
+                    <a href="">
+                        <i class="far fa-thumbs-down"></i>
+                        Dislike
+                        <span class="tiptext">I dilike this</span>
+                    </a>
+                    <a href="">
+                        <i class="fa fa-share"></i>
+                        Share
+                        <span class="tiptext">Share</span>
+                    </a>
+                    <a href="">
+                        <i class="fa fa-save"></i>
+                        Save
+                        <span class="tiptext">Save</span>
+                    </a>
+                    <a href="">
+                        <i class="fa fa-ellipsis-h"></i>
+                    </a>
+                </div>
+                <div class="subscribe">
+                    <div>
+                        <div>
+                            <img src="" alt="" />
+                            <div class="owner">
+                                <h5>Agasha Bornittah</h5>
+                                <p>8 Subscribers</p>
+                            </div>
+                        </div>
+                        <form>
+                            <button type="button">Subscribe</button>
+                        </form>
+                    </div>
+                    <div>
+                        <div>
+                            <h4>
+                                Comments
+                                <span>5</span>
+                            </h4>
+                        </div>
+                        <div>
+                            <img src="" alt />
+                            <p>We are so proud of you</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- comments section -->
+                <div>
+                    <div>
+                        <h4>5 comments</h4>
+                        <h3>
+                            <i class="fas fa-sort"></i>
+                            SORT BY
+                        </h3>
+                    </div>
+                    <form>
+                        <img src="" alt="" />
+                        <input type="text" placeholder="Add a comment">
+                        <div>
+                            <button>CANCEL</button>
+                            <button>COMMENT</button>
+                        </div>
+                    </form>
+                    <div>
+                        <div>
+                            <img src="" alt="" />
+                            <div>
+                                <p>
+                                    Gospel Music
+                                    <span>11 months ago</span>
+                                </p>
+                                <p>We are so proud of you!</p>
+                            </div>
+                            <div>
+                                <h3>
+                                    <i class="far fa-thumbs-up"></i>
+                                    7
+                                </h3>
+                                <h3><i class="far fa-thumbs-down"></i></h3>
+                                <h3>REPLY</h3>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <aside class="sidebar">
+                <div class="filters">
+                    <a href="#">All</a>
+                    <a href="#">Listenable</a>
+                    <a href="#">From your search</a>
+                    <a href="#">Recently Uploaded</a>
+                    <a href="#">Watched</a>
+                </div>
+                <div class="video-preview-list">
+                    <div class="video-preview">
+                        <div class="thumbnail">
+                            <video preload="metadata" class="preview" controls>
+                                <source
+                                    src="https://www.youtube.com/watch?v=lJIrF4YjHfQ#t=0.1"
+                                    type=video/mp4>
+                            </video>
+                        </div>
+                        <div class="details">
+                            <h4>Embed videos and playlists</h4>
+                            <p>Youtube Viewers</p>
+                            <p>
+                                58K views .
+                                <span>10 months ago</span>
+                            </p>
+                        </div>
+                    </div>
 
-    </main>
-</body>
+                    <div class="video-preview">
+                        <div class="thumbnail">
+                            <video class="preview" controls>
+                                <source
+                                    src="https://www.youtube.com/watch?v=lJIrF4YjHfQ"
+                                    type=video/mp4>
+                            </video>
+                        </div>
+                        <div class="details">
+                            <h4>Embed videos and playlists</h4>
+                            <p>Youtube Viewers</p>
+                            <p>
+                                58K views .
+                                <span>10 months ago</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="video-preview">
+                        <div class="thumbnail">
+                            <video class="preview" controls>
+                                <source
+                                    src="https://www.youtube.com/watch?v=lJIrF4YjHfQ"
+                                    type=video/mp4>
+                            </video>
+                        </div>
+                        <div class="details">
+                            <h4>Embed videos and playlists</h4>
+                            <p>Youtube Viewers</p>
+                            <p>
+                                58K views .
+                                <span>10 months ago</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="video-preview">
+                        <div class="thumbnail">
+                            <video class="preview" controls>
+                                <source
+                                    src="https://www.youtube.com/watch?v=lJIrF4YjHfQ"
+                                    type=video/mp4>
+                            </video>
+                        </div>
+                        <div class="details">
+                            <h4>Embed videos and playlists</h4>
+                            <p>Youtube Viewers</p>
+                            <p>
+                                58K views .
+                                <span>10 months ago</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </aside>
+        </main>
+    </body>
 </html>
