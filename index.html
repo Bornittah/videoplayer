@@ -15,48 +15,32 @@
     <body>
         <header>
             <nav class="topbar">
-                <ul class="">
-                    <li>
-                        <a href=""><i class="fa fa-bars"></i></a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img class="logo"
-                                src="assets/images/YouTube-Logo.wine.png"
-                                alt="logo" />
-                        </a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <form>
+                <div class="column1">
+                    <a href=""><i class="fa fa-bars"></i></a>
+                    <a href="">
+                        <img class="logo"
+                            src="assets/images/YouTube-Logo.wine.png"
+                            alt="logo" />
+                    </a>
+                </div>
+                <div class="column2">
+                    <form>
                             <input type="search" placeholder="Search">
                             <button>
                                 <i class="fa fa-search"></i>
                             </button>
                         </form>
-                    </li>
-                    <li>
                         <a href=""><i class="fa fa-microphone"></i></a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href=""><i class="fa fa-video"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="fa fa-th"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="far fa-bell"></i></a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img class="avatar" src="assets/images/avatar6.png"
+                </div>
+                <div class="column3">
+                     <a href=""><i class="fa fa-video"></i></a>
+                     <a href=""><i class="fa fa-th"></i></a>
+                     <a href=""><i class="far fa-bell"></i></a>
+                     <a href="">
+                        <img class="avatar" src="assets/images/avatar6.png"
                                 alt="avatar" />
-                        </a>
-                    </li>
-                </ul>
+                     </a>
+                </div>
             </nav>
         </header>
         <main class="main-content">
@@ -105,59 +89,65 @@
                     </a>
                 </div>
                 <div class="subscribe">
-                    <div>
-                        <div>
-                            <img src="" alt="" />
+                    <div class="col">
+                        <div class="owner-details">
+                            <img class="user-avatar" src="assets/images/avatar6.png" alt="user-avatar" />
                             <div class="owner">
                                 <h5>Agasha Bornittah</h5>
                                 <p>8 Subscribers</p>
                             </div>
                         </div>
                         <form>
-                            <button type="button">Subscribe</button>
+                            <button class="subscribe-btn" type="button">SUBSCRIBE</button>
                         </form>
                     </div>
-                    <div>
-                        <div>
-                            <h4>
-                                Comments
-                                <span>5</span>
-                            </h4>
+                    <div class="col">
+                        <div class="num-of-comments">
+                            <h4> Comments </h4>
+                            <p>15</p>
                         </div>
-                        <div>
-                            <img src="" alt />
+                        <div class="comment">
+                            <img class="commenter-avatar" src="assets/images/avatar6.png" alt="user-avatar" />
                             <p>We are so proud of you</p>
+                            <i class="fa fa-angle-right"></i>
                         </div>
                     </div>
                 </div>
                 <!-- comments section -->
                 <div>
-                    <div>
+                    <div class="comments-sort">
                         <h4>5 comments</h4>
                         <h3>
                             <i class="fas fa-sort"></i>
                             SORT BY
                         </h3>
                     </div>
-                    <form>
-                        <img src="" alt="" />
+                    <form class="add-comment-form">
+                        <div class="form-group">
+                        <img class="user-avatar" src="assets/images/avatar6.png" alt="user-avatar" />
                         <input type="text" placeholder="Add a comment">
-                        <div>
+                        </div>
+                        <div class="emoji">
+                            <p>&#128512;</p>
+                        </div>
+                        <div class="action-btn">
                             <button>CANCEL</button>
                             <button>COMMENT</button>
                         </div>
                     </form>
-                    <div>
-                        <div>
-                            <img src="" alt="" />
-                            <div>
-                                <p>
+                    <div class="comments-section">
+                        <div class="comment-message">
+                            <div class="comment-details">
+                                <img class="user-avatar" src="assets/images/avatar6.png" alt="user-avatar" />
+                            <div class="details">
+                                <h4>
                                     Gospel Music
                                     <span>11 months ago</span>
-                                </p>
+                                </h4>
                                 <p>We are so proud of you!</p>
                             </div>
-                            <div>
+                            </div>
+                            <div class="likes-replies">
                                 <h3>
                                     <i class="far fa-thumbs-up"></i>
                                     7
@@ -165,6 +155,51 @@
                                 <h3><i class="far fa-thumbs-down"></i></h3>
                                 <h3>REPLY</h3>
                             </div> 
+                            <details>
+                                <summary>
+                                    View 2 replies
+                                </summary>
+                                <div class="comment-message">
+                                    <div class="comment-details">
+                                        <img class="user-avatar" src="assets/images/avatar6.png" alt="user-avatar" />
+                                    <div class="details">
+                                        <h4>
+                                            Gospel Music
+                                            <span>11 months ago</span>
+                                        </h4>
+                                        <p>We are so proud of you!</p>
+                                    </div>
+                                    </div>
+                                    <div class="likes-replies">
+                                        <h3>
+                                            <i class="far fa-thumbs-up"></i>
+                                            7
+                                        </h3>
+                                        <h3><i class="far fa-thumbs-down"></i></h3>
+                                        <h3>REPLY</h3>
+                                    </div> 
+                                </div>
+                                <div class="comment-message">
+                                    <div class="comment-details">
+                                        <img class="user-avatar" src="assets/images/avatar6.png" alt="user-avatar" />
+                                    <div class="details">
+                                        <h4>
+                                            Gospel Music
+                                            <span>11 months ago</span>
+                                        </h4>
+                                        <p>We are so proud of you!</p>
+                                    </div>
+                                    </div>
+                                    <div class="likes-replies">
+                                        <h3>
+                                            <i class="far fa-thumbs-up"></i>
+                                            7
+                                        </h3>
+                                        <h3><i class="far fa-thumbs-down"></i></h3>
+                                        <h3>REPLY</h3>
+                                    </div> 
+                                </div>
+                            </details>
                         </div>
                     </div>
                 </div>

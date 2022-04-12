@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #e7e6e3;
+    background-color: #f7f6f4;
     max-width: 100%;
     max-height: 100%;
     font-family: 'Jost', sans-serif;
@@ -21,34 +21,60 @@ body{
     padding: auto 8px;
     z-index: 1;
 }
-
-.topbar ul{
+.column1{
     display: flex;
-    list-style-type: none;
-    margin: auto;
+    width: 25%;
+    margin: auto 15px;
+} 
+.column3{
+    display: flex;
+   width: 25%;
+   margin: auto 15px;
+   float: right;
+} 
+.column2{
+    display: flex;
+    width: 50%;
+    margin: auto 15px;
 }
-.topbar ul li{
-    margin: 0 15px;;
+.column2  form{
+    width: 80%;
 }
-.topbar ul li a{
-   text-decoration: none;
-}
-.topbar ul li a i{
-    font-size: 20px;
- }
- .topbar ul li form{
-    width: 200px;
- }
- .topbar ul li form input{
-    width: 100%;
+.column2 form input{
+    width: 80%;
     padding: 8px;
- }
-
+    outline: none;
+    border: 1px solid #b8b8b8;
+}
+.column2 form button{
+    width: 10%;
+    padding: 8px;
+    outline: none;
+    border: 1px solid #b8b8b8;
+}
+.column3 a{
+    margin: auto 15px;
+}
+.column1 a{
+    margin: auto 15px;
+}
+.column1 a i{
+    font-size: 25px;
+    color: #585555;
+}
+.column2 a i{
+    font-size: 25px;
+    color: #585555;
+}
+.column3 a i{
+    font-size: 25px;
+    color: #585555;
+}
 .logo{
     width: 100px;
 }
 .avatar{
-    width: 50px;
+    width: 40px;
     border-radius: 50%;
 }
 
@@ -157,4 +183,126 @@ a:hover .tiptext{
 .details p{
     color: #464646;
     line-height: 1.5;
+}
+/* comment */
+.subscribe{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+}
+.col{
+    flex: 1;
+    margin: 0 5px;
+    border: 1px solid #b1afaf;
+    display: flex;
+    justify-content: space-between;
+    padding: auto 5px;
+}
+.num-of-comments{
+    margin: auto 5px;
+}
+.owner-details{
+    display: flex;
+    margin: auto 5px;
+}
+
+.user-avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: auto 5px;
+}
+.owner{
+    line-height: 1.5;
+}
+.owner p{
+color: #636060;
+}
+form{
+    margin: auto 5px;
+}
+.subscribe-btn{
+    padding:10px;
+    color: #ffffff;
+    background-color: #d60606;
+    outline: none;
+    border: none;
+}
+.commenter-avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.comment{
+    display: flex;
+    margin: auto 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.comment i{
+    margin:auto 5px;
+    color: #9e9898;
+}
+.comments-sort{
+    display:flex;
+    justify-content: space-between;
+    width: 30%;
+    margin:24px 0
+}
+.add-comment-form{
+    display: flex;
+    flex-direction: column;
+}
+.form-group{
+    display: flex;
+}
+.form-group input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #9e9898;
+    width: 90%;
+    margin: 5px;
+}
+.emoji{
+    margin-right: auto;
+    float: left;
+    visibility: hidden;
+}
+.action-btn{
+  margin-left: auto;
+  position: relative;
+  float: right;
+  visibility: hidden;
+
+}
+.action-btn button{
+    padding: 5px;
+}
+
+.form-group input:focus + .emoji .action-btn{
+    visibility: visible;
+}
+
+.comment-message{
+    display: flex;
+    flex-direction: column;
+}
+.comment-details{
+    display: flex;
+}
+.details  span{
+    color: #636060;
+}
+.likes-replies{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    margin: 5px 15px;
+}
+summary{
+    color: #0a3668;
+}
+details{
+    margin: 10px 15px;
 }
